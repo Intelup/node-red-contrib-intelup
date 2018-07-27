@@ -1,0 +1,64 @@
+<script type="text/javascript">
+  RED.nodes.registerType('intelup', {
+    category: 'function',
+    color: '#a6bbcf',
+    defaults: {
+      name: { value: "" },
+      token: { value: "" }
+    },
+    inputs: 1,
+    outputs: 1,
+    inputLabels: "tag data",
+    outputLabels: "response",
+    icon: "intelup-logo.png",
+    color: "#a6bbcf",
+    label: function () {
+      return this.name || "intelup";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="intelup">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+  <div class="form-row">
+    <label for="node-input-token"><i class="icon-tag"></i> Token</label>
+    <input type="text" id="node-input-token" placeholder="Token">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="intelup">
+  <p>Sends the msg.payload content to Intelup Cloud.</p>
+
+  <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">array | object</span>
+        </dt>
+        <dd> must contain an array of objects or a single object with name and value. </dd>
+    </dl>
+
+ <h3>Output parameters</h3>
+     <ol class="node-ports">
+         <li>Sent data
+             <dl class="message-properties">
+                 <dt>payload <span class="property-type">array | object</span></dt>
+                 <dd>same payload from input.</dd>
+             </dl>
+         </li>
+         <li>Response status
+             <dl class="message-properties">
+                 <dt>response <span class="property-type">object</span></dt>
+                 <dd>the server's response.</dd>
+             </dl>
+         </li>
+     </ol>
+
+<h3>Details</h3>
+    <p><code>msg.payload</code> can be an array of objects with name and value or 
+    a single object with this parameters.</p>
+    <p>Device token must be set in node configuration</p>
+
+</script>
