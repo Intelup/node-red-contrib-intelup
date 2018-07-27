@@ -6,7 +6,7 @@ This is a node-red module to send data to [Intelup Cloud](https://intelup.app), 
 
 To install the latest version, run the following command in your Node-RED user directory (typically ~/.node-red):
 
-`npm i node-red-contrib-intelup`
+`npm i @intelup/node-red-contrib-intelup`
 
 # Usage
 
