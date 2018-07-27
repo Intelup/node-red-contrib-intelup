@@ -1,6 +1,6 @@
 {
   "name": "@intelup/node-red-contrib-intelup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module to send data to Intelup platform",
   "node-red": {
     "nodes": {
