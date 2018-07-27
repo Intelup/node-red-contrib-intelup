@@ -1,6 +1,6 @@
 # node-red-contrib-intelup
 
-This is a node-red module to send data to [Intelup Cloud](https://intelup.app), a SaaS Analytics platform.
+This is a node-red module that sends data to [Intelup Cloud](https://intelup.app), a SaaS Analytics platform.
 
 # Install
 
