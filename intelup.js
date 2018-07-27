@@ -38,10 +38,10 @@ module.exports = function(RED) {
           },
           function(error, response, body) {
             if (error) {
-              this.status({ fill: "red", shape: "ring", text: "error" })
+              node.status({ fill: "red", shape: "ring", text: "error" })
               return console.error("upload failed:", error)
             }
-            this.status({ fill: "green", shape: "dot", text: "sent" })
+            node.status({ fill: "green", shape: "dot", text: "sent" })
             msg.response = body
             node.send(msg)
           }
