@@ -1,0 +1,10 @@
+pipeline:
+  build:
+    image: node:10.1.0-alpine
+    commands:
+      - npm i -g npm@6.0.1
+      - npm ci
+      - echo -n $(node -p -e "require('./package.json').version"), latest > .tags
+
+branches:
+  include: [ master, feature/*, release/*, hotfix/*, develop ]
