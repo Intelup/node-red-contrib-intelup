@@ -1,5 +1,9 @@
 # node-red-contrib-intelup
 
+[![Intelup](https://img.shields.io/badge/Intelup-Cloud-blue.svg?style=for-the-badge)](https://intelup.app)
+[![node-red](https://img.shields.io/badge/node-red-red.svg?style=for-the-badge)](https://flows.nodered.org/node/@intelup/node-red-contrib-intelup)
+[![npm](https://img.shields.io/npm/dt/@intelup/node-red-contrib-intelup.svg?style=for-the-badge)](https://www.npmjs.com/package/@intelup/node-red-contrib-intelup)
+
 This is a node-red module that sends data to [Intelup Cloud](https://intelup.app), a SaaS Analytics platform.
 
 # Install
